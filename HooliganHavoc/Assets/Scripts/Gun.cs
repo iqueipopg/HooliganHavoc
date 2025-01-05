@@ -13,9 +13,8 @@ public class Gun : MonoBehaviour
     [SerializeField] float fireDistance = 10;
     [SerializeField] float fireRate = 0.5f;
 
-    [Header("Player")]
-    [SerializeField] Transform player;
-    
+    Transform player;
+
     Vector2 offset;
 
     private float timeSinceLastShot = 0f;
@@ -26,9 +25,7 @@ public class Gun : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         timeSinceLastShot = fireRate;
-        // player = GameObject.Find("Player").transform;
-
-        SetOffset(new Vector2(0.5f, 0.2f));
+        player = GameObject.Find("Player").transform;
     }
 
     private void Update()
@@ -90,6 +87,7 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        anim.SetTrigger("shoot");
         var muzzleGo = Instantiate(muzzle, muzzlePosition.position, transform.rotation);
         muzzleGo.transform.SetParent(transform);
         Destroy(muzzleGo, 0.05f);
@@ -101,5 +99,10 @@ public class Gun : MonoBehaviour
     public void SetOffset(Vector2 o)
     {
         offset = o;
+    }
+
+    public void SetPlayer(Transform playerTransform)
+    {
+        player = playerTransform;
     }
 }
