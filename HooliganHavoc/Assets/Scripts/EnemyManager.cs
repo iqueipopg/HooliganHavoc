@@ -3,16 +3,20 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
-    [SerializeField] float timeBetweenSpawns = 0.5f;
-    float currentTimeBetweenSpawns;
+    [SerializeField] GameObject chargerPrefab;
+
+  
 
     Transform enemiesParent;
 
     public static EnemyManager Instance;
+    public static int maxEnemies = 0;
+    public static int enemiesKilled = 0;
+    public static int enemiesSpawned;
 
     private void Awake()
     {
-        // Call it form other scripts
+       
         if (Instance == null) Instance = this;
     }
 
@@ -23,12 +27,15 @@ public class EnemyManager : MonoBehaviour
 
     private void Update()
     {
-        currentTimeBetweenSpawns -= Time.deltaTime;
+        if (!WaveManager.Instance.WaveRunning()) return;
 
-        if (currentTimeBetweenSpawns <= 0 )
+   
+
+        if (  enemiesSpawned<maxEnemies)
         {
             SpawnEnemies();
-            currentTimeBetweenSpawns = timeBetweenSpawns;
+            enemiesSpawned++;
+          
         }
     }
 
@@ -39,15 +46,20 @@ public class EnemyManager : MonoBehaviour
 
     void SpawnEnemies()
     {
-        var e = Instantiate(enemyPrefab, RandomPosition(), Quaternion.identity);
+        var roll = Random.Range(0, 100);
+        var enemyType = roll < 90 ? enemyPrefab : chargerPrefab;
+
+        var e = Instantiate(enemyType, RandomPosition(), Quaternion.identity);
         e.transform.SetParent(enemiesParent);
     }
 
     public void DestriyAllEnemies()
     {
-        foreach(Transform e in enemiesParent)
+        foreach (Transform e in enemiesParent)
         {
             Destroy(e.gameObject);
         }
     }
 }
+
+

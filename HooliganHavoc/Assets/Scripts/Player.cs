@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 6;
 
     Animator anim;
-    Rigidbody2D rb; // Cambiar a Rigidbody2D
+    Rigidbody2D rb;
 
     int maxHealth = 100;
     int currentHealth;
@@ -17,12 +17,12 @@ public class Player : MonoBehaviour
     float moveHorizontal, moveVertical;
     Vector2 movement;
 
-    int facingDirection = 1;  // 1 = right, -1 = left
+    int facingDirection = 1;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>(); // Asegúrate de que el componente es Rigidbody2D
+        rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         healthText.text = maxHealth.ToString();
     }
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
 
         if (enemy != null)
         {
-            Hit(20);
+            Hit(15);
         }
     }
 
@@ -80,6 +80,6 @@ public class Player : MonoBehaviour
     void Die()
     {
         dead = true;
-        // Call GameOver
+        GameManager.instance.GameOver();
     }
 }
