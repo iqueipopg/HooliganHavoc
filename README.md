@@ -4,6 +4,8 @@
 
 **Hooligan Havoc** is a fast-paced action game with **Top-Down Auto-Shooter** and **Rogue-like** mechanics, developed in **Unity** with **C#**. Players take on the role of a football ultra in a chaotic stadium, battling waves of rival hooligans with automatic weapons and upgrades.
 
+This project was developed as part of a Computer Science course (**Paradigmas y técnicas de la programación**) at the **Universidad Pontificia Comillas, ICAI**, for the **Engineering Mathematics** program.
+
 ## 📜 Table of Contents
 - [📌 Project Overview](#-project-overview)
 - [🛠️ Installation](#️-installation)
@@ -80,31 +82,25 @@ Hooligan Havoc/               # Main project folder
 ## 🖥️ Technologies Used
 
 ### 🔧 Development
-- **Unity Engine** (2022.X)
+- **Unity Engine** (6000.0.26f1)
 - **C#** for scripting
 - **TextMeshPro** for UI elements
-- **Cinemachine** for smooth camera movements
-
-### 🎨 Art & Audio
-- **Aseprite** (for pixel art)
-- **FMOD** (for sound design)
-- **OpenGameArt** (for free assets)
-
-### 🧠 AI & Game Mechanics
-- **Unity NavMesh** (for enemy AI navigation)
-- **Scriptable Objects** (for power-up and upgrade management)
 
 ## 🙌 Credits
 
-### 🎮 Development Team
-- **[Your Name]** - Lead Developer
-- **[Teammate Name]** - Game Designer
-- **[Teammate Name]** - Artist & Animator
+This project was developed as part of the **Paradigmas y técnicas de la programación** course at **Universidad Pontificia Comillas, ICAI**, for the **Engineering Mathematics** program. We would like to extend our sincere thanks to everyone who contributed to the success of this project.
 
-### 🛠️ Special Thanks
-- **Unity Community** for tutorials and documentation
-- **Open-source asset creators** for free sound and visual assets
-- **Friends & Playtesters** for feedback and support
+### Special Thanks To:
+- **Daniel Morell y Miguel Ayso**: Our professors, for providing the slides, materials, and guidance throughout the course. Their teachings were fundamental to the development of this project.
+- **Universidad Pontificia Comillas, ICAI**: For providing the educational environment and resources that made this project possible.
+- **Unity**: For providing the game engine and extensive documentation that enabled us to develop and optimize our game mechanics.
+- **All developers with similar games**: For serving as inspiration and providing guidance through shared knowledge and resources in the game development community.
+  
+### Developers:
+- **Jorge Kindelán Navarro**
+- **Ignacio Queipo de Llano Pérez-Gascón**
+
+We would also like to acknowledge all the open-source libraries and resources that made this project possible. Without these contributions, the development of the game would not have been as efficient or smooth.
 
 ---
 
