@@ -91,7 +91,7 @@ Hooligan Havoc/               # Main project folder
 This project was developed as part of the **Paradigmas y técnicas de la programación** course at **Universidad Pontificia Comillas, ICAI**, for the **Engineering Mathematics** program. We would like to extend our sincere thanks to everyone who contributed to the success of this project.
 
 ### Special Thanks To:
-- **Daniel Morell y Miguel Ayso**: Our professors, for providing the slides, materials, and guidance throughout the course. Their teachings were fundamental to the development of this project.
+- **Daniel Morell y Miguel Ayuso**: Our professors, for providing the slides, materials, and guidance throughout the course. Their teachings were fundamental to the development of this project.
 - **Universidad Pontificia Comillas, ICAI**: For providing the educational environment and resources that made this project possible.
 - **Unity**: For providing the game engine and extensive documentation that enabled us to develop and optimize our game mechanics.
 - **All developers with similar games**: For serving as inspiration and providing guidance through shared knowledge and resources in the game development community.
