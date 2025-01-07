@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3598ce24cbc76a04fa15781779d1a4f5
+guid: 7cf6f97be8b4cd44e89f148a889d2bdf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4373184736405950995
-    second: floor_0
+      213: 1475394397338445223
+    second: madrid_sprite_transparente_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floor_0
+      name: madrid_sprite_transparente_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 570
-        height: 389
+        x: 69
+        y: 21
+        width: 369
+        height: 728
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dedec5107a35f43c0800000000000000
-      internalID: -4373184736405950995
+      spriteID: 7a5a5fc2367a97410800000000000000
+      internalID: 1475394397338445223
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b1854b1bc4749d647a21dd6c8183339a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      floor_0: -4373184736405950995
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

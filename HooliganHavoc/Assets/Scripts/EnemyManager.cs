@@ -46,11 +46,13 @@ public class EnemyManager : MonoBehaviour
 
     void SpawnEnemies()
     {
+        Debug.Log("Spawning enemies...");  // Asegúrate de que esta
         var roll = Random.Range(0, 100);
         var enemyType = roll < 90 ? enemyPrefab : chargerPrefab;
 
         var e = Instantiate(enemyType, RandomPosition(), Quaternion.identity);
         e.transform.SetParent(enemiesParent);
+        Debug.Log("Enemy spawned at: " + e.transform.position);
     }
 
     public void DestriyAllEnemies()

@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     float moveHorizontal, moveVertical;
     Vector2 movement;
 
-    int facingDirection = 1;
+    int facingDirection = -1;
 
     private void Start()
     {
@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
 
         if (movement.x != 0)
         {
-            facingDirection = movement.x > 0 ? 1 : -1;
+            facingDirection = movement.x > 0 ? -1 : 1;
         }
         transform.localScale = new Vector2(facingDirection, 1);
     }
