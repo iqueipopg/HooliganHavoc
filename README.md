@@ -75,7 +75,7 @@ Hooligan Havoc/               # Main project folder
 │   ├── UserSettings/          # User-specific Unity settings
 │   └── .gitignore             # Git ignore file to exclude unnecessary files
 │── README.md                  # Project documentation for GitHub
-
+```
 
 ## 🖥️ Technologies Used
 
