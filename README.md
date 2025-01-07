@@ -26,9 +26,9 @@ In **Hooligan Havoc**, players fight off waves of rival hooligans in an intense 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/HooliganHavoc.git
+   git clone https://github.com/iqueipopg/HooliganHavoc.git
    ```
-2. Open the project in **Unity** (recommended version: `Unity 2022.X` or later).
+2. Open the project in **Unity**.
 3. Load the `MainScene` and press **Play** to start the game.
 4. (Optional) Build the game via `File > Build Settings` for your preferred platform.
 
