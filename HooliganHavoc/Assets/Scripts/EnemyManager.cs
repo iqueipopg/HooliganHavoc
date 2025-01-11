@@ -23,6 +23,7 @@ public class EnemyManager : MonoBehaviour
     private void Start()
     {
         enemiesParent = GameObject.Find("Enemies").transform;
+
     }
 
     private void Update()
@@ -44,11 +45,13 @@ public class EnemyManager : MonoBehaviour
         return new Vector2(Random.Range(-16, 16), Random.Range(-8, 8));
     }
 
-    void SpawnEnemies()
+    public void SpawnEnemies()
     {
-        Debug.Log("Spawning enemies...");  // Asegúrate de que esta
+
+
+        Debug.Log("Spawning enemies...");  // Asegï¿½rate de que esta
         var roll = Random.Range(0, 100);
-        var enemyType = roll < 90 ? enemyPrefab : chargerPrefab;
+        var enemyType = roll < 85 ? enemyPrefab : chargerPrefab;
 
         var e = Instantiate(enemyType, RandomPosition(), Quaternion.identity);
         e.transform.SetParent(enemiesParent);

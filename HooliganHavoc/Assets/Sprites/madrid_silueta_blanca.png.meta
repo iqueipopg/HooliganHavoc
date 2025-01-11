@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      madrid_silueta_blanca_0: 8723405537081856387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

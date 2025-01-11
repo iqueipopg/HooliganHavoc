@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      madrid_sprite_transparente_0: 1475394397338445223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

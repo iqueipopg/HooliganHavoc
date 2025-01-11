@@ -23,6 +23,7 @@ public class WaveManager : MonoBehaviour
 
     private void Start()
     {
+        if (!GameManager.instance.IsGameRunning()) return;
         StartNewWave();
         timeText.text = "Enemies left: " + EnemiesPerWave();
         waveText.text = "Wave: 1";
@@ -30,6 +31,7 @@ public class WaveManager : MonoBehaviour
 
     private void Update()
     {
+
         int e = EnemiesPerWave();
 
         if (EnemyManager.enemiesKilled >= e)
@@ -55,18 +57,15 @@ public class WaveManager : MonoBehaviour
         return currentWave * 5;
     }
 
-    private void StartNewWave()
+    public void StartNewWave()
     {
         StopAllCoroutines();
-        int enemiesInWave = EnemiesPerWave();
         EnemyManager.enemiesKilled = 0;
-        EnemyManager.maxEnemies = enemiesInWave;
+        EnemyManager.enemiesSpawned = 0;
         waveRunning = true;
         waveText.text = "Wave: " + currentWave;
-        
-
-
     }
+
 
 
 

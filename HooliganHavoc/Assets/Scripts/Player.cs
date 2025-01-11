@@ -4,7 +4,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI healthText;
-    [SerializeField] float moveSpeed = 6;
+    [SerializeField] float moveSpeed = 5;
 
     Animator anim;
     Rigidbody2D rb;
@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
-        healthText.text = maxHealth.ToString();
+        healthText.text = (maxHealth/10).ToString();
     }
 
     private void Update()
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = movement * moveSpeed;
+        rb.velocity = movement * moveSpeed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
     {
         anim.SetTrigger("hit");
         currentHealth -= damage;
-        healthText.text = Mathf.Clamp(currentHealth, 0, maxHealth).ToString();
+        healthText.text = (Mathf.Clamp(currentHealth, 0, maxHealth)/10).ToString();
 
         if (currentHealth < 0)
         {

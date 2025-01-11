@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 503928d13756cc74489eb3879e62757d
+guid: c3078d4daf2fc4f428585a2bc67977fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -925231488819972375
-    second: atleti_sprite_transparente_0
+      213: -7498833233225780437
+    second: game_over_logo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -70,7 +70,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -83,7 +83,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -100,29 +100,27 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: atleti_sprite_transparente_0
+      name: game_over_logo_0
       rect:
         serializedVersion: 2
-        x: 28
+        x: 0
         y: 0
-        width: 280
-        height: 674
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e631edecdae823f0800000000000000
-      internalID: -925231488819972375
+      spriteID: b23fea7a7eacee790800000000000000
+      internalID: -7498833233225780437
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
-    customData: 
     physicsShape: []
     bones: []
     spriteID: 
@@ -132,10 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    spriteCustomMetadata:
-      entries: []
     nameFileIdTable:
-      atleti_sprite_transparente_0: -925231488819972375
+      game_over_logo_0: -7498833233225780437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

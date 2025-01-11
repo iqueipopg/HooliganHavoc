@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atleti_silueta_blanca_0: 1813310010817454222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
